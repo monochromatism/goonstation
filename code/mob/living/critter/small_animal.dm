@@ -73,7 +73,8 @@ todo: add more small animals!
 		if(src.is_pet)
 			pets += src
 		..()
-
+		src.add_stam_mod_max("small_animal", -(STAMINA_MAX*0.5))
+		
 	disposing()
 		if(src.is_pet)
 			pets -= src
